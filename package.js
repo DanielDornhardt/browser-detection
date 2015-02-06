@@ -1,10 +1,15 @@
 Package.describe({
-    summary: "Meteorite package that provides browser detection."
+    "name": "awatson1978:browser-detection",
+    "summary": "Meteorite package that provides browser detection.",
+    "homepage": "https://github.com/awatson1978/browser-detection",
+    "author": "Abigail Watson  (http://www.pentasyllabic.com)",
+    "version": "1.0.5",
+    "git": "https://github.com/awatson1978/browser-detection.git"
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
+    api.versionsFrom('1.0.2.1');
     api.export('BrowserDetect');
 
-    api.use('standard-app-packages');
-    api.add_files('browser-detection.js', ["client"]);
+    api.addFiles('browser-detection.js', "client");
 });
